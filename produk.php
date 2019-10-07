@@ -6,6 +6,10 @@ class Produk {
 			$penerbit,
 			$harga = 0;
 
+	public function getLabel(){
+		return "$this->penulis, $this->penerbit";
+	}
+
 
 }
 
@@ -20,6 +24,19 @@ class Produk {
 	$produk3->penulis = "Masashi kishimoto";
 	$produk3->penerbit = "Shonen jump";
 	$produk3->harga = "30000";
-echo "komik : $produk3->penulis, $produk3->penerbit";
+
+	$produk4 = new Produk();
+	$produk4->judul = "Uncharted";
+	$produk4->penulis = "Neil Druckman";
+	$produk4->penerbit = "Sony Computer";
+	$produk4->harga = 250000;
+
+echo "komik : " . $produk3->getLabel();
+echo "<br>";
+echo "Game : " . $produk4->getLabel();
+
+
+
+
 
  ?>
