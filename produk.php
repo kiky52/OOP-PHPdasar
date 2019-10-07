@@ -23,7 +23,7 @@ class Produk {
 	$produk3->judul = "Naruto";
 	$produk3->penulis = "Masashi kishimoto";
 	$produk3->penerbit = "Shonen jump";
-	$produk3->harga = "30000";
+	$produk3->harga = 30000;
 
 	$produk4 = new Produk();
 	$produk4->judul = "Uncharted";
